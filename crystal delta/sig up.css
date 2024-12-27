@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e0f7fa, #e6e6fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register-card {
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+
+.register-left, .register-right {
+    flex: 1;
+    padding: 30px;
+}
+
+.register-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.register-left .logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.register-left h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.register-left form {
+    width: 100%;
+}
+
+.register-left input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.register-left button {
+    width: 100%;
+    padding: 12px;
+    background-color:  #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-left button:hover {
+    background-color:#4CAF49;
+}
+
+.register-left p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.register-left a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-left a:hover {
+    text-decoration: underline;
+}
+
+.register-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f8ff;
+}
+
+.register-right img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}

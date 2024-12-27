@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Dashboard</title>
+  <link rel="stylesheet" href="page 1.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <div class="logo">LEARN+</div>
+      <ul class="menu">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">My Course</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Homework</a></li>
+        <li><a href="#">Message</a></li>
+        <li><a href="#">Group</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+      <button class="logout">Logout</button>
+    </nav>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <form class="search-bar">
+          <input type="text" placeholder="Search...">
+        </form>
+        <div class="profile">
+          <img src="profile.jpg" alt="Profile" class="profile-pic">
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="course-info">
+          <h1>Data Science / Automatic Design System</h1>
+          <div class="video-preview">
+            <img src="video-placeholder.jpg" alt="Course Preview">
+            <div class="video-details">
+              <h2>Automation Effects</h2>
+              <p>11 Lessons - 3 Hours</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="progress-section">
+          <h2>My Progress</h2>
+          <div class="progress-cards">
+            <div class="card">
+              <h3>Interaction - I</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius.</p>
+              <p>8 classes - 45 min</p>
+              <div class="stars">
+                <span data-value="1">&#9733;</span>
+                <span data-value="2">&#9733;</span>
+                <span data-value="3">&#9733;</span>
+                <span data-value="4">&#9733;</span>
+                <span data-value="5">&#9733;</span>
+            </div>
+            <p id="ratingFeedback"></p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="special-classes">
+          <h2>My Special Classes</h2>
+          <form id="special-classes-form">
+            <p>No special booking yet!</p>
+            <button class="book-now">Book Now</button>
+          </form>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal" id="booking-modal">
+    <form class="modal-content">
+      <h2>Special Classes Booking</h2>
+      <label for="course">Select Course</label>
+      <select id="course" name="course">
+        <option value="">Select Course</option>
+        <option value="course1">Course 1</option>
+        <option value="course2">Course 2</option>
+        <option value="course3">Course 3</option>
+        <option value="course4">Course 4</option>
+        <option value="course5">Course 5</option>
+      </select><br>
+      <label for="trainee">Select Trainee</label>
+      <select id="trainee" name="trainee">
+        <option value="">Select Trainee</option>
+        <option value="trainee1">Trainee 1</option>
+        <option value="trainee2">Trainee 2</option>
+        <option value="trainee3">Trainee 3</option>
+      </select><br>
+      <label for="date">Select Date</label>
+      <input type="date" id="date" name="date"><br>
+      <label for="time">Select Timing</label>
+      <input type="time" id="time" name="time">
+      <div class="modal-buttons">
+        <button type="button" class="cancel">Cancel</button>
+        <button type="submit" class="save">Book-now</button>
+      </div>
+    </form>
+  </div>
+  <script src="page 1.js"></script>
+</body>
+</html>
